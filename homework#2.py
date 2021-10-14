@@ -43,9 +43,8 @@ def root(a):
     while a > 10:
         _sum = 0
         while a != 0:
-            tmp = a %10
+            _sum += a %10
             a //= 10
-            _sum += tmp
         print(_sum)
         a = _sum
 
