@@ -16,6 +16,9 @@ def goldbach(n):
     return 2, n-2 # as 2 is the only even prime number
 
 
+# n = int(input())
+# print(goldbach(n))
+
 
         # Palidrome numbers
 
@@ -28,6 +31,11 @@ def palidrome(a, b):
             i//=10
         if tmp1 == tmp2:
             print(tmp1, end=' ')
+
+        
+# a = int(input())
+# b = int(input())
+# print(palidrome(a, b))    
             
             
 
