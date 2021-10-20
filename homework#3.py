@@ -45,11 +45,13 @@ def suffix_sums(a):
 def cyclic_shift(a, n):
     if len(a) == n:
         return a
+    n -= len(a)*(n//len(a))
     for i in range(n):
         a.insert(0, a.pop())
 
 # a = [int(i) for i in input('a: ').split(' ')]
-# cyclic_shift(a, int(input()))
+# n = int(input())
+# cyclic_shift(a, n)
 # for i in a:
 #     print(i, end=' ')
 
@@ -57,9 +59,9 @@ def cyclic_shift(a, n):
 
         # Tree
         
-a = int(input())
 def tree(a):
     for i in range(1, a+1, 2):
         print(' '*((a-i)//2) +'*'*i + ' '*((a-i)//2))
 
+# a = int(input())
 # tree(a)
